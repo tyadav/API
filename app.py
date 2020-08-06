@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat, Jul 18 09:03:35 2020
+Created on Sat Jul 18 09:03:34 2020
 @author: TejYadav
 """
 
@@ -8,7 +8,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-store = [
+stores = [
     {
      "name": "My Wonderful Store",
      "items":[
@@ -19,6 +19,13 @@ store = [
          ]
      }
  ]
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+# POST - used to receive data
+# GET - used to send data back only
 
 # POST /store data: {name}
 @app.route('/store', methods=['POST'])
