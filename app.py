@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 18 09:03:34 2020
-@author: TejYadav
-"""
-
 from flask import Flask, jsonify, request
 
 app = Flask(__name__)
@@ -50,7 +44,7 @@ def get_store(name):
 # GET /store 
 @app.route('/store')
 def get_stores():
-    return jsonify({'store': store})
+    return jsonify({'stores': stores})
 
 # POST /store/<string:name>/item {name:, price:}
 @app.route('/store/<string:name>/item', methods=['POST'])
