@@ -4,6 +4,7 @@ Created on Thu Aug  6 13:35:16 2020
 
 @author: TejYadav
 """
+# Import required libraries
 import flask
 from flask import request
 #from werkzeug.utils import secure_filename
