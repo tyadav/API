@@ -1,6 +1,9 @@
 {  "Pizza" : [
 	{"Size" : "Small",
 		"Toppings" : ["Onions", "Mushrooms", "Tomato", "Double Cheese"]
+		},
+	{"Size" : "Large",
+		"Toppings" : ["Onions", "Peproni", "Tomato", "Double Cheese"]
 		}
 	]
 }
