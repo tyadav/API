@@ -2,7 +2,7 @@
 """
 Created on Thu Aug  6 13:35:16 2020
 
-@author:Tej
+@author: Tej
 """
 # Import required libraries
 import flask
